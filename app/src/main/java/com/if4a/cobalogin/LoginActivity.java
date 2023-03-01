@@ -37,8 +37,9 @@ public class LoginActivity extends AppCompatActivity {
                     etPassword.setError("Password Tidak Boleh Kosong!");
                 }
                 else {
-                    if(username.equals("wesley") && password.equals("apaya?")){
+                    if(username.equals("rickykaka") && password.equals("terserah")){
                         KL.setPref(LoginActivity.this,MainActivity.keySPusername,username);
+                        KL.setPref(LoginActivity.this,MainActivity.keySPname,"Ricardo Kaka");
                         startActivity(new Intent(LoginActivity.this,MainActivity.class));
                         finish();
                     }
